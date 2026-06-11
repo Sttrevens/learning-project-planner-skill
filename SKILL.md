@@ -1,6 +1,6 @@
 ---
 name: learning-project-planner
-description: Create durable self-study projects for any topic by generating a roadmap, long-term context file, local HTML dashboard, and first-week lesson.
+description: Use when a user wants to turn a study topic into a durable self-study project that future agent sessions can resume, with roadmap, context, dashboard, and first-week lesson artifacts.
 ---
 
 # Learning Project Planner
@@ -111,6 +111,13 @@ python3 scripts/create_learning_dashboard.py \
 - Include one small exercise per week.
 - Keep technical, philosophical, and product layers separate when the topic
   spans them.
+
+## Common Failure Modes
+
+- Producing only a chat answer instead of files.
+- Overloading Week 01 with the whole field.
+- Writing a dashboard that has no persistent notes or progress state.
+- Losing the user's purpose and copying a generic syllabus.
 
 ## Existing User Patterns
 
